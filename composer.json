@@ -1,0 +1,37 @@
+{
+    "name": "looplinguist/random-password-generator",
+    "description": "This Laravel package serves to generate random passwords tailored to your specific requirements. It offers a range of options, including passwords with symbols, numbers only, characters only, mixed lowercase and uppercase letters, non-symbol passwords, or combinations of digits and characters. You can customize the password generation process to suit your application's security needs effectively.",
+    "keywords": [
+        "looplinguist",
+        "random-password-generator"
+    ],
+    "type": "library",
+    "homepage": "https://github.com/LoopLinguist/random-password-generator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shyam",
+            "email": "code@shyambabu.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^10.0"
+    },
+    "require-dev": {},
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "LoopLinguist\\RandomPasswordGenerator\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LoopLinguist\\RandomPasswordGenerator\\RandomPasswordGeneratorServiceProvider"
+            ]
+        }
+    },
+    "prefer-stable": true
+}
