@@ -144,10 +144,8 @@ class GeneratePassword extends GeneratePasswordAbstract
         }
         return $this->password;
     }
-
-
     /** Password Length Master */
-
+ 
     public function getLength()
     {
         return $this->getPropertyValue(Property::LENGTH);
@@ -168,13 +166,11 @@ class GeneratePassword extends GeneratePasswordAbstract
         return $this;
     }
 
-
     public function removeUppercase()
     {
         $this->setPropertyValue(Property::UPPER_CASE, false);
         return $this;
     }
-
 
     public function removeLowercase()
     {
@@ -182,17 +178,14 @@ class GeneratePassword extends GeneratePasswordAbstract
         return $this;
     }
 
-
     public function removeNumbers()
     {
         $this->setPropertyValue(Property::NUMBERS, false);
         return $this;
     }
 
-
     public function removeSymbols()
     {
-
         $this->setPropertyValue(Property::SYMBOLS, false);
         return $this;
     }
@@ -203,7 +196,6 @@ class GeneratePassword extends GeneratePasswordAbstract
         $this->setPropertyValue(Property::AVOID_SIMILAR, false);
         return $this;
     }
-
 
     public function upperCaseRequired($characterCount = 1)
     {
